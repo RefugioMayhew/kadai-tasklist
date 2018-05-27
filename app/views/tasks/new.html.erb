@@ -1,0 +1,8 @@
+<h1>New page</h1>
+<%= form_for(@task) do |f| %>
+  <%= f.label :content, 'task' %>
+  <%= f.text_field :content %>
+  <%= f.submit 'submit' %>
+<% end %>
+
+<%= link_to 'Index', tasks_path %>
