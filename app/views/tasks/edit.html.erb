@@ -1,10 +1,6 @@
 <h1>id:<%= @task.id %>edit page</h1>
 
-<%= form_for(@task) do |f| %>
-  <%= f.label :content, 'task' %>
-  <%= f.text_field :content %>
-  <%= f.submit 'submit' %>
-<% end %>
+<%= render 'form', task: @task %> 
 
 <%= link_to 'Index', tasks_path %>
 <%= link_to 'Detail', task_path(@task) %>
